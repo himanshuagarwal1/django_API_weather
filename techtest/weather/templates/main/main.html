@@ -1,0 +1,11 @@
+
+{% block content %}
+    <h1>{{ls.name}}</h1>
+    <form method="POST" action="">
+    {% csrf_token %}
+       {{form.as_ul}}
+        
+        
+        <button type="submit", name="save", value="save">Submit</button>
+    </form>
+{% endblock %}
